@@ -6,12 +6,23 @@ body {
     flex-direction: column;
   }
 
-.header {
+.header,.footer {
     background: #1F2937; 
+}
+
+.header { 
     display: flex; 
     flex-direction: column;
     padding-left: 120px;
     padding-right: 120px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
 .container {
@@ -34,16 +45,24 @@ ul {
     gap: 16px;
 }
 
-a, .hero-desc {
+a, .hero-desc, .footer {
     text-decoration: none;
     font-size: 18px;
     color: #E5E7EB;
+}
+
+a {
+    padding: 2px;
 }
 
 .hero-text {
     font-size: 48px;
     font-weight: bolder;
     color: #F9FAF8;
+}
+.hero-left {
+    padding: 0px 15px;
+    flex-shrink: 1;
 }
 
 .hero{
@@ -54,7 +73,8 @@ a, .hero-desc {
 .hero-img {
     height: auto;
     width: 450px;
-    min-width: 250px;
+    min-width: 300px;
+    flex-grow: 2;
 }
 
 .btn {
