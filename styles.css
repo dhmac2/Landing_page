@@ -117,7 +117,7 @@ img{
 .content-grid-photo {
     border-radius: 15px;
     width: 200px;
-    height: 133px;
+    height: auto;
     margin: 25px;
     overflow: hidden;
     align-self: center;
@@ -139,7 +139,7 @@ img{
     display: flex;
     justify-content: center;
     flex-direction: column;
-
+    padding-bottom: 100px;
 }
 
 .quote {
@@ -148,12 +148,46 @@ img{
     font-weight: lighter;
     color: #1F2937;
     flex-wrap: wrap;
-    margin-top: 50px;
-    margin-left: 120px;
-    margin-right: 120px;
+    margin: 100px 120px 0px 120px;
 }
 
 .person-quoted {
     align-self: flex-end;
     margin-right: 120px;
+    font-weight: blold;
+    flex-wrap: wrap;
+}
+
+.action {
+    padding: 100px 120px;
+}
+
+.action-block {
+    background-color: #3882F6;
+    padding: 50px 25px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 15px;
+}
+
+.action-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-action {
+    font-weight: bold;
+    color: #E5E7EB;
+    font-size: 14px;
+}
+
+.sub-action {
+    color: #E5E7EB;
+    font-size: 14px;
+    flex-wrap: wrap;
+}
+
+#one.btn {
+    border: 1px solid white;
+    align-self: center;
 }
